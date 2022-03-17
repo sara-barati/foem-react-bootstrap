@@ -2,14 +2,17 @@
     justify-content: center;
     margin-left: 35%;margin-right: 35%;
 }
-.fech{
+.fech{ display: flex;justify-content: center;
     width: 100%;margin-right: 0%; padding-right: 0%;justify-content: center;
 }
 .name{
     justify-content:space-between
 }
 .ostan{
- width: 90%; height: 100%;margin-top: 0%; padding-top: 0%;
+ width: 75%; height: 100%;margin-top: 0%; padding-top: 0%;
+}
+.shahr{
+    width: 25%;
 }
 .inputpass{
     display: flex;
@@ -22,3 +25,16 @@
     border: none;
     height: 100%;
 }
+@media (max-width: 768px){
+    .ostan{
+        width: 50%; height: 100%;margin-top: 0%; padding-top: 0%;
+       }
+       .shahr{
+           width: 50%;
+       }
+       .inputs{
+        justify-content: center;
+        margin-left: 20%;margin-right: 20%;
+    }
+    
+  }

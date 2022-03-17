@@ -6,9 +6,11 @@ export default function Register() {
   const [value, setvalue] = useState("");
   let [fetchData, setfetchData] = useState("");
   let [states, setStates] = useState("");
-  const emailRef = useRef("");
+ 
   const [icon,seticon]=useState(AiFillEyeInvisible)
   const [type,settype]=useState("password")
+  const emailRef = useRef("");
+
 const handleToggle=()=>{
   if(type==="password"){
     seticon(AiFillEye);
@@ -28,7 +30,7 @@ else{
     setStates(e.target.value);
   };
   const handelClick = () => {
-    if (emailRef.current.value !== "") {
+    if (emailRef.current.value !== "" ) {
       alert("با موفقیت وارد شدید");
     }
   };
@@ -45,20 +47,21 @@ else{
   return (
     <>
       <div className="d-flex flex-column inputs">
-        <h3 className="text-center"> رایگان ثبت نام کنید </h3>
+        <h3 className="text-center mb-4">  رایگان ثبت نام کنید </h3>
         <div className="name d-flex">
         <input
           type="text"
-          placeholder=" نام خانوادگی       "
+          placeholder=" نام "
           className="mb-3 w-100"
-          required
+          required="required"
         />
-        <input type="text" placeholder="نام" className="mb-3 w-100" required />
+        <input type="text" placeholder=" نام خانوادگی" className="mb-3 w-100"  required="required" />
         </div>
         <input
           type="email"
           placeholder="پست الکترونیک"
           className="mb-3 "
+          ref={emailRef}
           required
         />
         <div className="inputpass mb-3">
@@ -95,7 +98,7 @@ else{
               استان{" "}
             </option>
             {Object.keys(fetchData).map((item, i) => (
-              <option key={i}>{item}</option>
+              <option key={i}>{item}</option> 
             ))}
           </select>
           <select className="shahr">
@@ -111,7 +114,7 @@ else{
           variant="success"
           type="submit"
           className="lastbtn"
-          onClick={handelClick}
+         onClick= {handelClick}
          
         >
           ثبت نام
