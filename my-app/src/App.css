@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;600&family=Oswald:wght@300;400&family=Playfair+Display&family=Raleway:wght@100&display=swap');
 body{
-  background-color: black;
+ background-color:rgb(233, 248, 248); 
 }
 h3{
   color: green;font-weight:900;
@@ -8,6 +8,9 @@ h3{
 *{
   font-family: 'Cairo', sans-serif;
   font-weight: 700;font-size: large;
+}
+span{
+  background-color: white;
 }
 
 

@@ -1,3 +1,5 @@
+
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./Login";
@@ -5,8 +7,6 @@ import Register from "./Register";
 import TabsComponent from "./TabsComponent";
 
 import React, { useState } from "react";
-
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   let [login, setlogin] = useState(true);

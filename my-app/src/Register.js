@@ -62,7 +62,7 @@ else{
           placeholder="پست الکترونیک"
           className="mb-3 "
           ref={emailRef}
-          required
+          required="required"
         />
         <div className="inputpass mb-3">
         <input
@@ -92,7 +92,7 @@ else{
             className="ostan"
             onChange={handelstate}
            
-            required
+            required="required"
           >
             <option value="" disabled selected>
               استان{" "}
